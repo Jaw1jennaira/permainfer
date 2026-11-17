@@ -1,0 +1,63 @@
+{
+  "data": {
+    "app": "PermaInfer",
+    "version": "0.1.0",
+    "type": "inference-receipt-bundle",
+    "count": 1,
+    "tip_receipt_id": "a7d976ada52db2b2ce179b4739551801e63c396f754d48e33ec253cb5685722c",
+    "receipts": [
+      {
+        "receipt_id": "a7d976ada52db2b2ce179b4739551801e63c396f754d48e33ec253cb5685722c",
+        "prev_receipt_id": "",
+        "created_at": 1794756066.4681168,
+        "model": "Qwen/Qwen2.5-0.5B-Instruct-GGUF",
+        "model_file": "qwen2.5-0.5b-instruct-q4_k_m.gguf",
+        "model_sha256": "74a4da8c9fdbcd15bd1f6d01d621410d31c6fc00986f5eb687824e7b93d7a9db",
+        "prompt_sha256": "b7585523b0752c58b624aafe3750625b0823e9763ff8a8c9480b555033867e62",
+        "completion_sha256": "76de18ea38ff3d1c2bc25027020f1cd2ecdc1950b3117cc2c7dbc73e246b2184",
+        "params": {
+          "max_tokens": 256,
+          "stop": [],
+          "temperature": 0.7,
+          "top_p": 0.9
+        },
+        "usage": {
+          "completion_tokens": 32,
+          "prompt_tokens": 32,
+          "total_tokens": 64,
+          "wall_seconds": 14.085
+        },
+        "node": "htch-runtime",
+        "prompt": null,
+        "completion": null
+      }
+    ]
+  },
+  "tags": [
+    {
+      "name": "App-Name",
+      "value": "PermaInfer"
+    },
+    {
+      "name": "App-Version",
+      "value": "0.1.0"
+    },
+    {
+      "name": "Content-Type",
+      "value": "application/json"
+    },
+    {
+      "name": "Type",
+      "value": "inference-receipt-bundle"
+    },
+    {
+      "name": "Receipt-Count",
+      "value": "1"
+    },
+    {
+      "name": "Tip-Receipt-ID",
+      "value": "a7d976ada52db2b2ce179b4739551801e63c396f754d48e33ec253cb5685722c"
+    }
+  ],
+  "data_json": "{\"app\":\"PermaInfer\",\"count\":1,\"receipts\":[{\"completion\":null,\"completion_sha256\":\"76de18ea38ff3d1c2bc25027020f1cd2ecdc1950b3117cc2c7dbc73e246b2184\",\"created_at\":1794756066.4681168,\"model\":\"Qwen/Qwen2.5-0.5B-Instruct-GGUF\",\"model_file\":\"qwen2.5-0.5b-instruct-q4_k_m.gguf\",\"model_sha256\":\"74a4da8c9fdbcd15bd1f6d01d621410d31c6fc00986f5eb687824e7b93d7a9db\",\"node\":\"htch-runtime\",\"params\":{\"max_tokens\":256,\"stop\":[],\"temperature\":0.7,\"top_p\":0.9},\"prev_receipt_id\":\"\",\"prompt\":null,\"prompt_sha256\":\"b7585523b0752c58b624aafe3750625b0823e9763ff8a8c9480b555033867e62\",\"receipt_id\":\"a7d976ada52db2b2ce179b4739551801e63c396f754d48e33ec253cb5685722c\",\"usage\":{\"completion_tokens\":32,\"prompt_tokens\":32,\"total_tokens\":64,\"wall_seconds\":14.085}}],\"tip_receipt_id\":\"a7d976ada52db2b2ce179b4739551801e63c396f754d48e33ec253cb5685722c\",\"type\":\"inference-receipt-bundle\",\"version\":\"0.1.0\"}"
+}

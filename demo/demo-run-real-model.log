@@ -1,0 +1,73 @@
+== starting server on :8000 ==
+
+== /health ==
+{"status":"ok","model":"Qwen/Qwen2.5-0.5B-Instruct-GGUF","model_file":"qwen2.5-0.5b-instruct-q4_k_m.gguf","model_sha256":"74a4da8c9fdbcd15bd1f6d01d621410d31c6fc00986f5eb687824e7b93d7a9db","node":"htch-runtime","ledger_entries":0,"uptime_seconds":1.1}
+
+== chat completion ==
+{
+    "id": "chatcmpl-a7d976ada52db2b2ce179b47",
+    "object": "chat.completion",
+    "created": 1794756066,
+    "model": "Qwen/Qwen2.5-0.5B-Instruct-GGUF",
+    "choices": [
+        {
+            "index": 0,
+            "message": {
+                "role": "assistant",
+                "content": "Decentralized AI infrastructure allows for greater control and security over AI algorithms and data, reducing the risk of centralized control and enabling more robust and secure AI systems."
+            },
+            "finish_reason": "stop"
+        }
+    ],
+    "usage": {
+        "prompt_tokens": 32,
+        "completion_tokens": 32,
+        "total_tokens": 64
+    },
+    "permainfer_receipt": {
+        "receipt_id": "a7d976ada52db2b2ce179b4739551801e63c396f754d48e33ec253cb5685722c",
+        "prev_receipt_id": "",
+        "prompt_sha256": "b7585523b0752c58b624aafe3750625b0823e9763ff8a8c9480b555033867e62",
+        "completion_sha256": "76de18ea38ff3d1c2bc25027020f1cd2ecdc1950b3117cc2c7dbc73e246b2184",
+        "model_sha256": "74a4da8c9fdbcd15bd1f6d01d621410d31c6fc00986f5eb687824e7b93d7a9db",
+        "verify": "/receipts/a7d976ada52db2b2ce179b4739551801e63c396f754d48e33ec253cb5685722c"
+    }
+}
+
+== receipt a7d976ada52db2b2ce179b4739551801e63c396f754d48e33ec253cb5685722c ==
+{
+    "receipt_id": "a7d976ada52db2b2ce179b4739551801e63c396f754d48e33ec253cb5685722c",
+    "prev_receipt_id": "",
+    "created_at": 1794756066.4681168,
+    "model": "Qwen/Qwen2.5-0.5B-Instruct-GGUF",
+    "model_file": "qwen2.5-0.5b-instruct-q4_k_m.gguf",
+    "model_sha256": "74a4da8c9fdbcd15bd1f6d01d621410d31c6fc00986f5eb687824e7b93d7a9db",
+    "prompt_sha256": "b7585523b0752c58b624aafe3750625b0823e9763ff8a8c9480b555033867e62",
+    "completion_sha256": "76de18ea38ff3d1c2bc25027020f1cd2ecdc1950b3117cc2c7dbc73e246b2184",
+    "params": {
+        "max_tokens": 256,
+        "stop": [],
+        "temperature": 0.7,
+        "top_p": 0.9
+    },
+    "usage": {
+        "completion_tokens": 32,
+        "prompt_tokens": 32,
+        "total_tokens": 64,
+        "wall_seconds": 14.085
+    },
+    "node": "htch-runtime",
+    "prompt": null,
+    "completion": null
+}
+
+== ledger verify ==
+ledger: data/demo-ledger.jsonl  entries: 1
+OK — receipt chain intact, all hashes match.
+
+== Arweave payload for this receipt (dry run — nothing uploaded) ==
+Dry-run payload only — nothing uploaded, nothing spent.
+tags: ['App-Name=PermaInfer', 'App-Version=0.1.0', 'Content-Type=application/json', 'Type=inference-receipt', 'Model=Qwen/Qwen2.5-0.5B-Instruct-GGUF', 'Model-File=qwen2.5-0.5b-instruct-q4_k_m.gguf', 'Model-SHA256=74a4da8c9fdbcd15bd1f6d01d621410d31c6fc00', 'Receipt-ID=a7d976ada52db2b2ce179b4739551801e63c396f', 'Prev-Receipt-ID=genesis', 'Prompt-SHA256=b7585523b0752c58b624aafe3750625b0823e976', 'Completion-SHA256=76de18ea38ff3d1c2bc25027020f1cd2ecdc1950', 'Node=htch-runtime']
+data bytes: 691
+
+Demo done. Ledger: data/demo-ledger.jsonl
